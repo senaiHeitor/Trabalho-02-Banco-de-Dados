@@ -1,9 +1,87 @@
-GET http://localhost:3333/
+GET http://localhost:3000/
 
 ###
 
-GET http://localhost:3333/marcas
+GET http://localhost:3000/
+
+-------------------------------------------
+### HTTP REQUEST MARCAS
 
 ###
 
-GET http://localhost:3333/marcas/199
+GET http://localhost:3000/marcas
+
+###
+GET http://localhost:3000/marcas/1
+
+###
+DELETE http://localhost:3000/marcas/2
+
+------------------------------------------ 
+## HTTP REQUEST PRODUTOS
+
+###
+GET http://localhost:3000/produtos
+
+###
+GET http://localhost:3000/produtos/4
+
+###
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+
+{
+    "nome": "Skateboard",
+    "preco": 300,
+    "estoque": 12,
+    "id_marca": 5
+}
+------------------------------------------ 
+### HTTP REQUEST CLIENTES
+
+###
+GET http://localhost:3000/clientes
+
+###
+GET http://localhost:3000/clientes/2
+
+###
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+
+{
+    "nome": "GB",
+    "email": "gabriel@gmail.com",
+    "cidade": "Cataguases"
+}
+
+------------------------------------------
+
+### HTTP REQUEST PEDIDOS
+
+###
+GET http://localhost:3000/pedidos
+
+###
+GET http://localhost:3000/pedidos/1
+
+###
+GET http://localhost:3000/pedidos/cidade/Leopoldina
+###
+POST http://localhost:3000/pedidos
+Content-Type: application/json
+
+{
+  "id_cliente": 1,
+  "data_pedido": "2025-09-10",
+  "itens": [
+    {
+      "id_pedido": 1,
+  "id_produto": 2,
+  "quantidade": 1,
+  "preco_unitario": 100
+    }
+  ]
+}
