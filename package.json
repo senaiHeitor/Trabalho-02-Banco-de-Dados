@@ -1,0 +1,21 @@
+{
+  "name": "api-com-banco-de-dados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.15.0"
+  }
+}
